@@ -1,29 +1,66 @@
 .itberries-section {
-    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
-    color: #fff;
+  background: linear-gradient(
+    90.18deg,
+    #1d1d1d 31.74%,
+    #1d1d1d 90.49%,
+    #1d1d1d 90.49%
+  );
+  color: #fff;
+  width: 100%;
 }
 
 .itberries-header {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    line-height: 37px;
-    letter-spacing: 0.18538em;
-    font-size: 20px;
-    padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  line-height: 37px;
+  letter-spacing: 0.18538em;
+  font-size: 20px;
+  padding: 20px 0 10px 50px;
+  margin: 0;
 }
 
 .itberries-content {
-    display: flex;
-    padding: 20px
+  display: flex;
+  padding: 0px 0 5px 50px;
+}
+
+.itberries-text {
+  font-family: "Open Sans", sans-serif;
+  line-height: 138.68%;
+  width: 1148px;
+  height: 89;
+  word-wrap: break-word;
+  align-self: center;
 }
 
 .itberries-logo {
-    font-family: "Varela", sans-serif;
-    font-size: 120px;
-    height: auto;
-    color: #000;
-    letter-spacing: 3.78667px;
-    border: 10px solid #000;
-    border-radius: 0 20% 0 20%;
-    transform: rotate(23.89deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  padding-left: 20px;
+  border: 10px solid #000;
+  border-radius: 0 20% 0 20%;
+  /* transform: rotate(23.89deg); */
+}
+
+.itberries-logo p {
+  font-family: "Varela", sans-serif;
+  font-size: 100px;
+  letter-spacing: 3.78667px;
+  transform: rotate(23.89deg);
+}
+
+.readmore {
+  text-transform: capitalize;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 130px;
+  position: relative;
+  bottom: 15px;
+  left: 50px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
 }

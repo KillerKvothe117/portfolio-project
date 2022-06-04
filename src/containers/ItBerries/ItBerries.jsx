@@ -9,7 +9,7 @@ const ItBerries = () => {
       </header>
 
       <div className="itberries-content">
-        <p>
+        <p className="itberries-text">
           Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
           varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
           quis libero viverra facilisis ut ac est. Morbi commodo, eros in
@@ -20,9 +20,12 @@ const ItBerries = () => {
           tempor, accumsan nec eros.
         </p>
 
-        <p className="itberries-logo">IT</p>
+        <div className="itberries-logo">
+          <p>IT</p>
+        </div>
       </div>
-      <p>READ MORE</p>
+
+      <p className="readmore">Read More</p>
     </div>
   );
 };

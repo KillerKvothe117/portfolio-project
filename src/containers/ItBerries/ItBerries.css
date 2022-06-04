@@ -1,0 +1,29 @@
+.itberries-section {
+    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+    color: #fff;
+}
+
+.itberries-header {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    line-height: 37px;
+    letter-spacing: 0.18538em;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.itberries-content {
+    display: flex;
+    padding: 20px
+}
+
+.itberries-logo {
+    font-family: "Varela", sans-serif;
+    font-size: 120px;
+    height: auto;
+    color: #000;
+    letter-spacing: 3.78667px;
+    border: 10px solid #000;
+    border-radius: 0 20% 0 20%;
+    transform: rotate(23.89deg);
+}

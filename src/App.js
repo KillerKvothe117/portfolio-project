@@ -7,7 +7,6 @@ import {
   Footer,
   ItBerries,
   Portfolio,
-  Skills,
 } from "./containers";
 import { Navbar } from "./components";
 
@@ -18,7 +17,6 @@ function App() {
       <Hero />
       <ItBerries />
       <About />
-      <Skills />
       <Portfolio />
       <Contact />
       <Footer />

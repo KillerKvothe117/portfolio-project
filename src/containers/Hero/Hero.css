@@ -9,18 +9,21 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 90px;
-  padding-top: 40px;
+  padding: 40px 90px 0;
 }
 
 .hero-links {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-links a {
+  flex-direction: column;
   text-decoration: none;
-  margin-right: 2.5rem;
+  margin-right: 1.5rem;
+  padding-right: 1.5rem;
   font-size: 17px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -54,7 +57,6 @@
 .hero-image img {
   width: 550px;
   height: 600px;
-  margin-right: 4.5rem;
   position: relative;
   top: 100px;
 }
@@ -104,6 +106,138 @@
 
 .hero-linkedin {
   border-radius: 50%;
+}
+
+.hero-navbar-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 20px;
+  background: #000;
+}
+
+.menu {
+  color: #fff;
+  font-size: 40px;
+}
+
+.close-icon {
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+  left: 78%;
+}
+
+.slider {
+  min-width: 100%;
+  height: auto;
+}
+
+.slider ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+.slider ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 12px;
   text-align: center;
-  align-self: center;
+}
+
+.slider ul li a:hover {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.mobile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 160px;
+  color: #fff;
+}
+
+.mobile-name {
+  font-family: "Advent Pro", sans-serif;
+  width: 360px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.mobile-job {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  width: 360px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.white-separator {
+  width: 120px;
+  height: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-links {
+  display: flex;
+  width: 120px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mobile-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+.mobile-hero-linkedin {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-section {
+    background: url("../../Assets/bg-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero-navbar {
+    display: none;
+  }
+
+  .hero-content {
+    display: none;
+  }
+
+  .hero-social-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-navbar-menu {
+    display: none;
+  }
+
+  .mobile-content {
+    display: none;
+  }
 }

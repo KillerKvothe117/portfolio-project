@@ -7,6 +7,7 @@
   );
   color: #fff;
   width: 100%;
+  height: 280px;
 }
 
 .itberries-header {
@@ -21,16 +22,21 @@
 
 .itberries-content {
   display: flex;
-  padding: 0px 0 5px 50px;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .itberries-text {
   font-family: "Open Sans", sans-serif;
   line-height: 138.68%;
-  width: 1148px;
+  width: fit-content;
   height: 89;
-  word-wrap: break-word;
   align-self: center;
+  text-align: justify;
 }
 
 .itberries-logo {
@@ -41,7 +47,7 @@
   padding-left: 20px;
   border: 10px solid #000;
   border-radius: 0 20% 0 20%;
-  /* transform: rotate(23.89deg); */
+  margin-left: 30px;
 }
 
 .itberries-logo p {
@@ -51,16 +57,74 @@
   transform: rotate(23.89deg);
 }
 
+.text {
+  display: flex;
+  align-items: center;
+}
+
 .readmore {
   text-transform: capitalize;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
   width: 130px;
-  position: relative;
-  bottom: 15px;
-  left: 50px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 15px;
+  padding: 0px 20px;
+  margin-left: 54px;
+}
+
+.more {
+  position: relative;
+  left: 30%;
+  top: 40px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 139px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .itberries-section {
+    height: 450px;
+  }
+
+  .itberries-header {
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .itberries-content {
+    flex-direction: column;
+    text-align: center;
+    height: 275px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .itberries-text {
+    height: auto;
+    margin-top: 20px;
+    text-align: justify;
+    margin-right: 1px;
+  }
+
+  .itberries-logo {
+    display: none;
+  }
+
+  .readmore {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .more {
+    display: none;
+  }
 }

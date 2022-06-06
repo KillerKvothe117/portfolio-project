@@ -24,8 +24,10 @@ const ItBerries = () => {
           <p>IT</p>
         </div>
       </div>
-
+      <div className="text">
       <p className="readmore">Read More</p>
+      <p className="more">More</p>
+      </div>
     </div>
   );
 };

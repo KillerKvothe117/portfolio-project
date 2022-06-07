@@ -11,10 +11,12 @@ const Navbar = () => {
     } else {
       setFix(false);
     }
-  }
+  };
+
+  window.addEventListener("scroll", handleScroll);
 
   return (
-    <nav className="hero-navbar">
+    <nav className={fix ? "hero-navbar fixed" : "hero-navbar"}>
       <div className="logo">
         <img src={images.pclogo} alt="logo" />
       </div>

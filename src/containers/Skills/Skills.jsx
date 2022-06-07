@@ -31,36 +31,19 @@ const Skills = () => {
           <p>CSS3</p>
         </div>
 
-        <div className="sass">
-          <IoLogoSass className="sass-icon" />
-          <p>SASS</p>
-        </div>
-
         <div className="javascript">
           <SiJavascript className="javascript-icon" />
           <p>JAVASCRIPT</p>
         </div>
-      </div>
 
-      <div className="skills-container">
         <div className="react">
           <FaReact className="react-icon" />
           <p>REACT</p>
         </div>
 
-        <div className="bootstrap">
-          <BsFillBootstrapFill className="bootstrap-icon" />
-          <p>BOOTSTRAP</p>
-        </div>
-
         <div className="git">
           <ImGit className="git-icon" />
           <p>GIT</p>
-        </div>
-
-        <div className="figma">
-          <img src={images.figma} alt="figma-icon" className="figma-icon" />
-          <p>FIGMA</p>
         </div>
       </div>
 
@@ -89,11 +72,7 @@ const Skills = () => {
           <p>TYPESCRIPT</p>
         </div>
       </div>
-
-      <div className="uses">
-        <h2>OTHER SKILLS:</h2>
-      </div>
-
+{/* 
       <div className="skills-container">
         <div className="british">
           <img
@@ -124,7 +103,7 @@ const Skills = () => {
           <img src={images.clogo} alt="c-icon" className="c-icon" />
           <p>C</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -11,9 +11,6 @@ const Portfolio = () => {
 
       <div className="showcase">
         <div className="showcase-head">
-          <p>ALL</p>
-          <p>CODED</p>
-          <p>DESIGNED</p>
         </div>
 
         <div className="showcase-items">

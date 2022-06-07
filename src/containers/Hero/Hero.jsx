@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Hero.css";
+import { Navbar } from "../../components";
 import { images } from "../../constants";
 import { motion } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -11,36 +12,16 @@ const Hero = () => {
 
   return (
     <div className="hero-section" id="hero">
-      <nav className="hero-navbar">
-        <div className="logo">
-          <img src={images.pclogo} alt="logo" />
-        </div>
-
-        <ul className="hero-links">
-          <li>
-            <a href="#About">About Me</a>
-          </li>
-          <li>
-            <a href="#Skills">Skills</a>
-          </li>
-          <li>
-            <a href="#Portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
 
       <div className="hero-navbar-menu">
         <img src={images.mobilelogo} alt="mobile logo" />
         <HiMenu className="menu" onClick={() => setToggle(true)} />
-      </div>
-        <div>
+
         {toggle && (
           <motion.div
             className="slider"
-            whileInView={{ y: [-200, 0] }}
+            whileInView={{ y: [-100, 0] }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <HiX className="close-icon" onClick={() => setToggle(false)} />
@@ -72,8 +53,8 @@ const Hero = () => {
       </div>
 
       <div className="mobile-content">
-        <p className="mobile-name">my name is Thomas</p>
-        <h1 className="mobile-job">I'M A DEVELOPER</h1>
+        <p className="mobile-name">My name is Kosi</p>
+        <h1 className="mobile-job">I'M A FRONT-END DEVELOPER</h1>
         <img
           className="white-separator"
           src={images.whiteline}
@@ -108,12 +89,8 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-about">
           <p className="introduction">Hi, I am</p>
-          <h1 className="name">Tomasz Gajda</h1>
-          <p className="profession">Front-End Designer / UI Designer</p>
-        </div>
-
-        <div className="hero-image">
-          <img src={images.hero} alt="profile pic" />
+          <h1 className="name">Kosi Iyiegbu</h1>
+          <p className="profession">Front-End Developer</p>
         </div>
       </div>
       <div className="hero-social-links">

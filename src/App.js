@@ -8,12 +8,10 @@ import {
   ItBerries,
   Portfolio,
 } from "./containers";
-import { Navbar } from "./components";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
       <Hero />
       <ItBerries />
       <About />

@@ -37,11 +37,12 @@
 
 .about-intro-text {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 138.68%;
   color: #050505;
+  padding: 0 20px;
 }
 
 .explore {
@@ -77,35 +78,31 @@
 }
 
 .about-services h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 22px;
-    letter-spacing: 0.18538em;
-    line-height: 27px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.18538em;
+  line-height: 27px;
 }
 
 .about-services p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    text-align: justify;
-}
-
-.maint-services {
-    margin-left: 40px;
-    padding: 30px;
-}
-
-.design-services  {
-    padding: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: justify;
 }
 
 .dev-services {
-    padding: 30px;
+  padding: 30px;
+}
+
+.maint-services {
+  margin-left: 40px;
+  padding: 30px;
 }
 
 .separator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -123,5 +120,5 @@
 
   .maint-services {
     margin: 0;
-}
+  }
 }

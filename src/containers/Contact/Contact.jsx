@@ -1,6 +1,12 @@
 import React from "react";
 import "./Contact.css";
 import { images } from "../../constants";
+import {
+  AiOutlineTwitter,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+} from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -11,12 +17,46 @@ const Contact = () => {
 
       <div className="contact-intro">
         <p className="contact-intro-text">
-          Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
-          varius finibus. Sed ornare sit amet lorem <br /> sed viverra. In vel
-          urna quis libero viverra facilisis ut ac est.
+          Would you love to work with me?
+          <br /> Don't hesitate to reach out to me via email or social media.
         </p>
 
-        <img className="blackline" src={images.blackline} alt="separator"/>
+        <div className="contact-socials">
+          <a
+            href="https://twitter.com/Kvothe_Killer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="twitter-icon"
+          >
+            <AiOutlineTwitter />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emmanuel-iyiegbu-19659a125/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedin-icon"
+          >
+            <AiOutlineLinkedin />
+          </a>
+          <a
+            href="https://www.instagram.com/_kkvothe_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="instagram-icon"
+          >
+            <AiOutlineInstagram />
+          </a>
+          <a
+            href="mailto: iyiegbuk@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="email-icon"
+          >
+            <AiOutlineMail />
+          </a>
+        </div>
+
+        <img className="blackline" src={images.blackline} alt="separator" />
       </div>
 
       <form id="contact-form">
@@ -25,7 +65,11 @@ const Contact = () => {
         <label htmlFor="email"></label>
         <input type="email" id="email" placeholder="Enter Your Email*" />
         <label htmlFor="phone_number"></label>
-        <input type="tel" id="phone_number" placeholder="Enter Your Phone Number*" />
+        <input
+          type="tel"
+          id="phone_number"
+          placeholder="Enter Your Phone Number*"
+        />
         <label htmlFor="message"></label>
         <textarea id="message" placeholder="Enter Your Message*" />
         <button type="submit">SUBMIT</button>

@@ -17,6 +17,7 @@ import car from "../Assets/car.png";
 import eatsome from "../Assets/eatsome.png";
 import neon from "../Assets/neon.png";
 import portal from "../Assets/portal.png";
+import itlogo from "../Assets/It-logo.png";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -39,4 +40,5 @@ export default {
   eatsome,
   neon,
   portal,
+  itlogo,
 };

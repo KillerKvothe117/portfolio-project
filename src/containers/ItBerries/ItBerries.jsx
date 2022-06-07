@@ -5,28 +5,20 @@ const ItBerries = () => {
   return (
     <div className="itberries-section">
       <header className="itberries-header">
-        <h2>IT BERRIES</h2>
+        <h2>FUN FACTS</h2>
       </header>
 
       <div className="itberries-content">
         <p className="itberries-text">
-          Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
-          varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
-          quis libero viverra facilisis ut ac est. Morbi commodo, eros in
-          dignissim tempus, lacus odio rutrum augue, in semper sem magna quis
-          tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit.
-          Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet
-          varius turpis vel pharetra. Ut ante justo, consequat vitae elementum
-          tempor, accumsan nec eros.
+          I am a Computer Science student of Godfrey Okoye University. For
+          awhile, I have always been intrigued by the websites and how they
+          always come up.It wasn't until my 3rd year that I decided to try my
+          luck in it and see what I could do. I realized it was something I
+          really liked and I was comfortable doing it. I am also a huge fan of
+          anime and I love playing video games a lot especially FPS AND RPG
+          games. My goal is to become a top-notch Front-End Engineer who is able
+          to consistently build user interfaces, web applications and websites.
         </p>
-
-        <div className="itberries-logo">
-          <p>IT</p>
-        </div>
-      </div>
-      <div className="text">
-      <p className="readmore">Read More</p>
-      <p className="more">More</p>
       </div>
     </div>
   );

@@ -39,10 +39,27 @@
   text-align: center;
   margin-top: 50px;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 138.68%;
   color: #050505;
 }
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-socials a {
+  padding: 0 20px;
+  font-size: 40px;
+}
+
+.twitter-icon, .linkedin-icon, .email-icon, .instagram-icon {
+  color: #000;
+}
+
 
 #contact-form {
   display: flex;

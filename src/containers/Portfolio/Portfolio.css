@@ -5,7 +5,7 @@
   background: url("../../Assets/bg-portfolio.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 160px;
+  padding: 40px 0;
 }
 
 .portfolio-header h2 {
@@ -69,5 +69,12 @@
   .showcase-items img,
   .showcase-items2 img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio-header h2 {
+    padding: 10px;
+    font-size: 14px;
   }
 }

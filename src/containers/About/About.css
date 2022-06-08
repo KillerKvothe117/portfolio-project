@@ -12,11 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding: 70px 0;
 }
 
 .about-header h2 {
-  height: auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -32,7 +31,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 50px 0;
 }
 
 .about-intro-text {
@@ -72,9 +70,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1066px;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .about-services h3 {
@@ -91,12 +88,12 @@
 }
 
 .dev-services {
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .maint-services {
   margin-left: 40px;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .separator {
@@ -106,6 +103,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .about-header h2 {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
   .services-container {
     display: flex;
     justify-content: center;
@@ -113,9 +115,8 @@
   }
   .about-services {
     display: flex;
-    width: 290px;
     flex-direction: column;
-    padding: 20px 20px;
+    padding: 20px 0px;
   }
 
   .maint-services {

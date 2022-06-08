@@ -1,56 +1,44 @@
 import React, { useState } from "react";
 import "./Hero.css";
-import { Navbar } from "../../components";
 import { images } from "../../constants";
-import { motion } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
 import { SiMaildotru } from "react-icons/si";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Hero = () => {
-  const [toggle, setToggle] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="hero-section" id="hero">
       <Navbar />
 
-      <div className="hero-navbar-menu">
-        <img src={images.mobilelogo} alt="mobile logo" />
-        <HiMenu className="menu" onClick={() => setToggle(true)} />
+      <nav>
+        <div className="hero-navbar-menu">
+          <img src={images.mobilelogo} alt="mobile-logo" />
+          <button className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <HiX /> : <HiMenu />}
+          </button>
+        </div>
 
-        {toggle && (
-          <motion.div
-            className="slider"
-            whileInView={{ y: [-100, 0] }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <HiX className="close-icon" onClick={() => setToggle(false)} />
-
-            <ul>
-              <li>
-                <a href="#About" onClick={() => setToggle(false)}>
-                  About Me
-                </a>
-              </li>
-              <li>
-                <a href="#Skills" onClick={() => setToggle(false)}>
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#Portfolio" onClick={() => setToggle(false)}>
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a href="#Contact" onClick={() => setToggle(false)}>
-                  Contact Me
-                </a>
-              </li>
-            </ul>
-          </motion.div>
-        )}
-      </div>
+        <ul
+          className={isMenuOpen ? "hero-navbar-links" : "nav"}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <a href="#Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#Portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
 
       <div className="mobile-content">
         <p className="mobile-name">My name is Kosi</p>

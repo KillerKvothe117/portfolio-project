@@ -17,6 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className={fix ? "hero-navbar fixed" : "hero-navbar"}>
+    
       <div className="logo">
         <img src={images.pclogo} alt="logo" />
       </div>

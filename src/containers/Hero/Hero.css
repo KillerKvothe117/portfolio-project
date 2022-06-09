@@ -201,6 +201,16 @@ html {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .mobile-content {
+    padding: 50px;
+  }
+
+  .mobile-links {
+    padding-top: 30px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .hero-navbar-menu {
     display: none;

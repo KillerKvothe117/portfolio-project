@@ -31,9 +31,15 @@ const About = () => {
       <div className="services-container">
         <div className="about-services">
           <div className="dev-services">
-            <img src={images.development} alt="dev-logo" className="dev-logo" />
-            <div className="dev-text">
+            <div className="dev-services-title">
+              <img
+                src={images.development}
+                alt="dev-logo"
+                className="dev-logo"
+              />
               <h3>DEVELOPMENT</h3>
+            </div>
+            <div className="dev-text">
               <p>
                 I can develop the site based on your needs and suggestions. I
                 can
@@ -44,13 +50,16 @@ const About = () => {
           </div>
 
           <div className="maint-services">
-            <img
-              src={images.maintenance}
-              alt="maint-logo"
-              className="maint-logo"
-            />
-            <div className="maint-text">
+            <div className="maint-services-title">
+              <img
+                src={images.maintenance}
+                alt="maint-logo"
+                className="maint-logo"
+              />
               <h3>MAINTENANCE</h3>
+            </div>
+
+            <div className="maint-text">
               <p>
                 You can leave the maintenace of your site to me. I can make
                 <br /> sure the site has what it needs to be kept running and
